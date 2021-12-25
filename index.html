@@ -1,46 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FinesseNepal - Engineering Cosultancy</title>
     <style>
-        body{
+        body {
+            font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
             margin: 0;
+            color: #425466;
         }
-       .bg-image{
-              background-image: url("background.jpeg");
-              background-size: cover;
-              background-position: center;
-              background-repeat: no-repeat;
-              height: 100vh;
-              width: 100%;
-       }
-       .center-box{
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #0a2540;
+        }
+
+        .wrapper {
+            /* height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute; */
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+
+            -webkit-animation: rainbow 25s ease infinite;
+            -z-animation: rainbow 25s ease infinite;
+            -o-animation: rainbow 25s ease infinite;
+            animation: rainbow 25s ease infinite;
+        }
+
+        @-webkit-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+        @-moz-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+        @-o-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+        .header {
+            /* background-color: #f1f1f1; */
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+        }
+
+        .brand {
+            font-size: 20pt;
+            font-weight: bold;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            /* color: rgb(0, 139, 23); */
             color: white;
-            max-width: 400px;
-            height: 200px;
-            background-color: rgba(0,0,0,0.5);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            box-sizing: border-box;
-            padding: 20px;
-       }
-       h1{
-            margin: 0;
-            padding: 0;
-       }
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .client {
+            padding: 8px;
+            width: 150px;
+        }
+
+        .client .image {
+            text-align: center;
+        }
+
+        .client .name {
+            text-align: center;
+        }
+
+        .section .container p {
+            text-align: justify;
+        }
+
+        .team-member {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .team-member .image {
+            text-align: center;
+        }
+
+        .team-member .name {
+            text-align: center;
+        }
+
+        .team-member .designation {
+            text-align: center;
+            font-size: 11pt;
+        }
     </style>
 </head>
+
 <body>
-   <div class="bg-image">
-       <!-- center div -->
-       <div class="center-box">
-            <h1>Coming Soon...</h1>
-       </div>
-   </div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="nav-bar">
+                    <a class="brand" href="/">FinesseNepal</a>
+                    <div class="nav">
+                        <a href="#about">About</a>
+                        <a href="#team">Team</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="home">
+            <!-- introduction of company -->
+            <div class="container" style="height: 400px;">
+                <p style="font-size: 20pt; font-weight: bolder; color:black; max-width: 700px;">
+                    We are a team of highly experienced engineers, builders, designers and valuator who are passionate
+                    about
+                    what we do.
+                </p>
+            </div>
+        </section>
+    </div>
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>
+                Finesse Engineers and Builders Pvt Ltd is a leading engineering consultancy firm in Nepal.
+                Finess Nepal is established in the year 2017. We have been providing engineering services to the clients
+                in the field of civil engineering.
+                We are committed to provide quality services to our clients.
+                We embrace the concept of “Quality First” and strive to provide the best services to our clients.
+            </p>
+            <p>
+                Our Mission as an engineering company is to be the leading provider of Professional Engineering
+                Services, within Nepal, in the field of Real Estate Construction, Consulting, Surveying, Property and
+                Asset Valuation.
+            </p>
+
+            <h3>Our Clients</h3>
+            <div style="display: flex;  flex-wrap: wrap; justify-content: space-between;">
+                <div class="client">
+                    <div class="image">
+                        <img src="adbl.jpg" alt="" height="60">
+                    </div>
+                    <div class="name">
+                        Agriculture Development Bank
+                    </div>
+                </div>
+                <div class="client">
+                    <div class="image">
+                        <img src="gbime.jpeg" alt="" height="60">
+                    </div>
+                    <div class="name">
+                        Global IME Bank
+                    </div>
+                </div>
+                <div class="client">
+                    <div class="image">
+                        <img src="mega.png" alt="" height="60">
+                    </div>
+                    <div class="name">
+                        Mega Bank
+                    </div>
+                </div>
+                <div class="client">
+                    <div class="image">
+                        <img src="prabhu.png" alt="" height="60">
+                    </div>
+                    <div class="name">
+                        Prabhu Bank
+                    </div>
+                </div>
+                <div class="client">
+                    <div class="image">
+                        <img src="muktinath.jpg" alt="" height="60">
+                    </div>
+                    <div class="name">
+                        Muktinath Bikas Bank
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team" style="display: flex; flex-wrap: wrap;">
+                <div class="team-member">
+                    <div class="image">
+                        <img src="sandesh.jpeg" alt="" width="100">
+                    </div>
+                    <div class="name">
+                        Sandesh Pandey
+                    </div>
+                    <div class="designation">
+                        Civil Engineer
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="image">
+                        <img src="sanyog.jpeg" alt="" width="100">
+                    </div>
+                    <div class="name">
+                        Sanyog Rajbhandari
+                    </div>
+                    <div class="designation">
+                        Civil Engineer
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="image">
+                        <img src="rajit.jpg" alt="" width="100">
+                    </div>
+                    <div class="name">
+                        Ranjit Bahandari
+                    </div>
+                    <div class="designation">
+                        Civil Engineer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div>
+                <b>Finesse Engineers and Builders Pvt Ltd</b>
+                <br>
+                <small>
+                    <i>Construction, Consulting and Suppliers</i>
+                    <br>
+                    Pulchowk Dhobhigat Road, Lalitpur, Nepal
+                    <br>
+                    Phone: +977-9857064138, +977-9849163258
+                    <br>
+                    <!-- email to -->
+                    <a href="mailto:info@finessenepal.com">info@finessenepal.com</a>,
+                    <br>
+                    <a href="mailto:finessenepal@gmail.com">finessenepal@gmail.com</a>
+                </small>
+            </div>
+            <br>
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.678790513293!2d85.312686591318!3d27.675340995445634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb599556ffe524c87!2zMjfCsDQwJzMxLjIiTiA4NcKwMTgnNDkuNyJF!5e0!3m2!1sen!2snp!4v1640444062270!5m2!1sen!2snp"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <div class="footer">
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <a href="#"><img src="facebook.png" alt="" width="30"></a>
+            <a href="#"><img src="instagram.png" alt="" width="30"></a>
+            <a href="#"><img src="twitter.png" alt="" width="30"></a>
+        </div>
+        <hr>
+        <!-- copywrite -->
+        <div style="text-align: center;">
+            <small>
+                <i>Copyright &copy; Finesse Engineers and Builders Pvt Ltd. All rights reserved.</i>
+            </small>
+        </div>
+        <br>
+    </div>
 </body>
+
 </html>
